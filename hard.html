@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Navigation Practice</title>
+	<style>
+		h1 {
+			font-family: 'Open Sans Condensed', sans-serif;
+			
+		}
+		
+		nav {
+			text-align: center;
+			padding: 10px 0;
+			margin: 20px 0 0;
+			font-family: 'PT Serif', serif;
+		}
+		
+		nav a, nav a:visited {
+		  color: #000;
+		}
+		
+		nav a.selected, nav a:hover {
+		  color: #5d2496;
+		}
+
+		nav ul {
+		    padding: 0;
+		    margin: 0;
+		}
+
+		nav ul li {
+		    position: relative;
+		    display: inline-block;
+		    list-style-type: none;
+		    margin: 0;
+		    padding: 10px 0;
+		}
+
+		nav ul li a {
+		    text-decoration: none;
+		    padding: 12px;
+		}
+		    
+		nav ul li.parent ul.child {
+		    display: none; 
+		}
+		nav ul li.parent:hover ul.child {
+		    display: block; 
+		    position: absolute;
+		    top: 40px;
+		}
+
+		nav ul li.parent ul.child li {
+		    padding: 0;
+		}
+	
+		nav ul li.parent ul.child li a {
+		    display: block;
+		}
+		
+	</style>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700|PT+Serif:400,700" rel="stylesheet">
+</head>
+	
+<body>
+	<header>
+    <h1 align="center">Imaginary Art Museum</h1>
+		<nav>
+      <ul>
+        <li><a href=#home>Home</a></li>
+        <li><a href=#collection>Collection</a></li>
+        <li class="parent"><a href=#exhibitions>Exhibitions</a>
+					<ul class="child">
+				    <li><a href="#">Current Exhibitions</a></li>
+				    <li><a href="#">Upcoming Exhibitions</a></li>
+				    <li><a href="#">Past Exhibitions</a></li>
+					</ul>	
+        <li><a href=#faq>FAQ</a></li>
+        <li><a href=#visit>Visit Us</a></li>
+      </ul>
+    </nav>
+  </header>
+	
+	
+</body>
